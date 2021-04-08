@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue Email List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./master.css">
   </head>
   <body>
     <div id="root">
-      <ol id="email-list">
-        <li v-if="emails.length == 10" v-for="email in emails">{{email}}</li>
-      </ol>
+      <div class="title">
+        <h1>Contacts</h1>
+      </div>
+      <ul id="email-list" v-if="emails.length == 10">
+        <li v-for="email in emails"><i class="fas fa-user-circle"
+          :class="colors[pickColor()]"></i>{{email}}</li>
+      </ul>
 
     </div>
 

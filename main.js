@@ -2,6 +2,7 @@ var app = new Vue({
   el: '#root',
   data: {
     emails: [],
+    colors: ['blue', 'orange', 'pink', 'grey', 'green'],
   },
   mounted () {
     for (var i = 0; i < 10; i++) {
@@ -11,4 +12,9 @@ var app = new Vue({
         });
     }
   },
+  methods: {
+    pickColor: function () {
+      return Math.floor(Math.random() * (4 + 1));
+    }
+  }
 });

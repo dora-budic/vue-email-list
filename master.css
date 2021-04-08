@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  background-color: #FFFDD9;
+  color: #F6A830;
+  padding: 20px 10px;
+  box-shadow: 0px 0px 5px -2px #381906;
+}
+
+ul {
+  list-style: none;
+}
+
+ul > li {
+  padding: 15px;
+  border-bottom: 1px solid #ECEFF1;
+  display: flex;
+  align-items: center;
+}
+
+ul > li > i {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.blue {
+  color: #01579B;
+}
+
+.orange {
+  color: #EF6E03;
+}
+
+.pink {
+  color: #EC407A;
+}
+
+.grey {
+  color: #78909C;
+}
+
+.green {
+  color: #356A20;
+}
