@@ -9,7 +9,7 @@
   <body>
     <div id="root">
       <ol id="email-list">
-        {{email()}}
+        <li v-if="emails.length == 10" v-for="email in emails">{{email}}</li>
       </ol>
 
     </div>
